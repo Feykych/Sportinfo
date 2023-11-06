@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+.container {
+	display: flex;
+ }
+ 
+.peryti {
+	font-size: 1.5rem;
+	padding: 1rem 3rem;
+	color: #f4f4f4;
+	text-transform: uppercase;
+	border-radius: 10px;
+ }
+ 
+#btn {
+	text-decoration: none;
+	border: 1px solid rgb(125, 126, 149);
+	overflow: hidden;
+	border-radius: 20px;
+	width: 100px;
+   height: 30px;	
+	text-align: center;
+	position: relative;
+	left: 50px;
+}
+ 
+#btn:hover {
+	box-shadow: 1px 1px 25px 10px rgba(152, 152, 152, 0.4);
+ }
+ 
+#btn:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+	120deg,
+	transparent,
+	rgba(125, 126, 149, 0.4),
+	transparent
+	);
+	transition: all 650ms;
+ }
+ 
+#btn:hover:before {
+	left: 100%;
+ }
+.pereyti{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	position: relative;
+	left: 75px;
+	bottom: -30px;
+}
+
+/* ________________________________________ */
+
+.logo{
+	user-select: none;
+	position: fixed;
+	margin: 1.5%;
+	width: 5%;
+	cursor: pointer;
+	z-index: 5;
+	transition: transform 0.4s ease;
+}
+
+.header{
+	user-select: none;
+	width: 100%;
+	height: 75vh;
+	background-image: url(img/headerblack.jpg);
+	background-size: cover;
+}
+
+.header>h1{
+	color: white;
+	position: relative;
+	top: 25%;
+	font-size: 65px;
+	font-family: 'Edu SA Beginner', cursive;
+	display: flex;
+	justify-content: center;
+}
+
+.info1{
+	position: relative;
+	top: 40%;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Edu SA Beginner', cursive;
+}
+
+.fitnesimg{
+	width: 100%;
+	border-radius: 20px;
+	position: relative;
+	top: 5%;
+}
+
+.fitness{
+	color: white;
+	text-align: center;
+	margin-top: 15%;
+	font-size: 14px;
+}
+
+.menu1{
+	float: right;
+	background-color: #5c5b5b;
+	text-decoration: none;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+	color: white;
+	border-radius: 30px;
+	font-size: 20px;
+	transition: 0.5s;
+	position: relative;
+	top: 70px;
+}
+
+.menu1:hover{
+	background-color: #808080;
+	transition: 0.5s;
+}
+
+.bar{
+	padding: 10px;
+	background-color: #1f1f1f;
+	width: 200px;
+	height: 380px;
+	border-radius: 30px 0px 0px 30px;
+	position: absolute;
+	top: -180px;
+	right: 0;
+	transform: translate(0, 65%);
+	display: block;
+	z-index: 6;
+}
+
+.drop{
+	display: none;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.drop>img{
+	width: 100%;
+}
+
+.nav_bar:hover .bar{
+	transition: 0.4s;
+	display: block;
+}
+
+#card1,#card2,#card3,#card4{
+	margin-top: 19vh;
+}
+
+.card1{
+	background-color: rgba(28, 28, 28, 0.6);
+	width: 100%;
+	height: 400px;
+	padding:10px;
+	border-radius: 40px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.card1{
+	border: 3px solid  rgba(28, 28, 28, 0.6);
+	transition: 0.5s;
+}
+
+.card1:hover{
+	border: 3px solid #5e5e5e;
+	background-color: rgba(41, 41, 41, 0.6);
+	transition: 0.5s;
+}
+
+.img{
+	width: 100%;
+	height: 200px;
+	border-radius: 40px;
+	user-select: none;
+}
+
+.info{
+	text-align: center;
+	color: white;
+	font-size: 17px;
+}
+
+.more{
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	width: 140px;
+	background-color: black;
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	right: 50%;
+	transform: translate(50%, 0);
+}
+
+.more{
+	transition: 0.5s;
+	border: solid black 2px;
+	border-radius: 20px;
+}
+
+.more:hover{
+	border: solid gray 2px;
+	transition: 0.5s;
+}
+
+.content{
+	background-image: url(img/mainbg.jpg);
+	background-size: cover;
+	width: 92%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 4%;
+	padding: 4%;
+}
+
+.tak{
+	background-color: black;
+	width: 100%;
+	height: 100px;
+	background-size: cover;
+	position: relative;
+	bottom: 0;
+	user-select: none;
+}
+
+.des{
+	color: white;
+	float: right;
+	position: relative;
+	top: 45px;
+	margin-right: 20px;
+	user-select: none;
+}
+
+/* .inst{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 25px;
+	margin-left: 10px;
+} */
+
+@media(min-width: 2100px){
+	#btn{
+		font-size: 23px;
+		width: 150px;
+		height: 35px;
+	}	
+	.header>h1{
+		font-size: 80px;
+	}
+	.info1{
+		font-size: 30px;
+	}
+	.fitness{
+		font-size: 17px;
+	}
+	.menu1{
+		font-size: 23px;
+		width: 250px;
+		height: 35px;
+	}
+	.bar{
+		width: 250px;
+		height: 480px;
+	}
+	.card1{
+		height: 500px;
+		margin-bottom: 50px;
+	}
+	.img{
+		height: 250px;
+	}
+	.info{
+		font-size: 21px;
+	}
+	.content{
+		grid-column-gap: 10%;
+	}
+	.des{
+		font-size: 130%;
+	}
+}
+
+@media(min-width: 1900px){
+	.header>h1{
+		font-size: 73px;
+	}
+	.info1{
+		font-size: 24px;
+	}
+	.bar{
+		top: -150px;
+	}
+}
+
+@media(min-width: 1700px){
+	.content{
+		grid-column-gap: 6%;
+	}
+}
+
+@media(max-width: 1300px){
+	.content{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	#card4{
+		margin-top: 0;
+	}
+}
+
+@media(max-width: 1200px){
+	.logo{
+		width: 7%;
+	}
+}
+
+@media(max-width: 1100px){
+	.header>h1{
+		font-size: 60px;
+	}
+	.info1{
+		font-size: 17px;
+		top: 30%;
+	}
+	.bar{
+		display: none;		
+		top:-221px
+	}	
+	.drop{
+		display: block;
+	}
+}
+
+@media(max-width: 900px){
+	.card1{
+		width: 90%;
+	}
+	.content{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#card3{
+		margin-top: 0;
+	}
+}
+
+@media(max-width: 800px){
+	.logo{
+		width: 8%;
+	}
+	.header>h1{
+		font-size: 50px;
+	}
+	.info1{
+		font-size: 15px;
+		top: 30%;
+
+	}
+	.bar{
+		display: none;
+		top: -221px;
+	}
+}
+
+@media(max-width: 600px){
+	.card1{
+		width: 80%;
+		margin-left: 7%;
+		height: 350px;
+	}
+	.content{
+		grid-template-columns:1fr;
+	}
+	#card2{
+		margin-top: 0;
+	}
+}
+
+@media(max-width: 550px){
+	.logo{
+		width: 10%;
+	}
+	.header>h1{
+		font-size: 35px;
+		top: 15%;
+	}
+	.info1{
+		font-size: 12px;
+		top: 25%;
+	}
+	.bar{
+		display: none;
+		top: -221px;
+	}
+}
+
+@media(max-width: 500px){
+	.header{
+		height: 40vh;
+	}
+	.card1{
+		height: 400px;
+	}
+}
+
+@media(max-width: 400px){
+	.logo{
+		width: 12%;
+	}
+	.header>h1{
+		font-size: 30px;
+	}
+	.info1{
+		font-size: 10px;
+		top: 20%;
+	}
+}
+
+@media(max-width: 350px){
+	.card1{
+		height: 400px;
+		margin-left: 3%;
+	}
+}
+
+@media(max-width: 340px){
+	.info1{
+		font-size: 7px;
+	}
+}
